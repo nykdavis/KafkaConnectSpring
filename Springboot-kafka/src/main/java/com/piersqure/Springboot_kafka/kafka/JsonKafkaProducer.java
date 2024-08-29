@@ -8,6 +8,7 @@ import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
+
 import com.piersqure.Springboot_kafka.payload.User;
 
 @Service
@@ -33,8 +34,6 @@ public class JsonKafkaProducer {
 		
 		kafkaTemplate.send(message);
 	}
-	
-	
 	
 
 }
